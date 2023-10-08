@@ -1,0 +1,142 @@
+:root
+{
+    --ColorA : #193948;
+    --ColorB : #FCDC73;
+    --ColorC : #E76268;
+    --ColorD : #4FADC0;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--ColorD);
+    text-align: center;
+}
+.Main
+{
+    background-color: var(--ColorC);
+    border-radius: 100px;
+    padding: 100px;
+    box-shadow: 10px 5px 10px ;
+    margin: 100px;
+}
+.Box
+{
+    display: flex;
+}
+.Box *
+{
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+button , .Box *
+{
+    border: 0px;
+}
+.Box *:focus
+{
+    outline: none;
+}
+button
+{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color:#FCDC73;
+    color:#193948;
+    width: 50%;
+}
+button:hover
+{
+    cursor: pointer;
+}
+p
+{
+    padding: 10px 20px;
+    border: 2px solid #193948;
+    margin: 10px;
+    border-radius: 5PX;
+}
+
+
+@media (max-width:450px)
+{
+    .Box
+    {
+        flex-direction: column;
+    }
+    .Main
+    {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+    p
+    {
+        padding: 5px;
+    }
+}
+.CalculateButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+body {
+    background-color: #f0f0f0;
+    background-image: linear-gradient(45deg, #f06, #9f6);
+    background-size: 200% 200%;
+    animation: gradient 10s infinite alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+.CalculateButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: fire 0.8s infinite alternate;
+}
+
+@keyframes fire {
+    0% {
+        background-color: #ff6600;
+        transform: translateY(0);
+        box-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+    }
+    50% {
+        background-color: #ffcc00;
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(255, 102, 0, 0.8);
+    }
+    100% {
+        background-color: #ff6600;
+        transform: translateY(0);
+        box-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+    }
+}
